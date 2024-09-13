@@ -1,9 +1,8 @@
 # Desafío - Sistema Bancario en Java
 
-![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)
 ![Estado del Proyecto](https://img.shields.io/badge/estado-finalizado-green.svg)
 ![Versión](https://img.shields.io/badge/versión-1.0.0-brightgreen.svg)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MIT License](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
 
 ![Sistema Bancario](https://cdn1.gnarususercontent.com.br/6/408785/217bbdb0-d321-4e7b-be86-7b6472c85a60.png)
 

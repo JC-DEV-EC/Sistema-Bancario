@@ -13,7 +13,7 @@ public class Main {
         System.out.print("Ingrese el tipo de cuenta (Ahorro/Corriente): ");
         String tipoCuenta = sc.nextLine();
 
-        System.out.print("Ingrese el valor de saldo: ");
+        System.out.print("Ingrese el saldo inicial: ");
         double saldoInicial = sc.nextDouble();
 
         // Crear la cuenta bancaria
@@ -28,29 +28,28 @@ public class Main {
             System.out.println("Hubo un error en la espera.");
         }
 
-        // Menu de opciones
+        // Menú de opciones
         int opcion;
         do {
             limpiarPantalla();
 
             System.out.println("==================================================");
-            System.out.println("--- Menu de Opciones--");
+            System.out.println("--- Menú de Opciones ---");
             System.out.println("1. Ver saldo");
-            System.out.println("2. Hacer un deposito");
+            System.out.println("2. Hacer un depósito");
             System.out.println("3. Hacer un retiro");
-            System.out.println("4. Ver informacion de la cuenta");
+            System.out.println("4. Ver información de la cuenta");
             System.out.println("5. Ver historial de transacciones");
             System.out.println("6. Salir");
-            System.out.print("Seleccion una opcion: ");
-            System.out.println("\n==================================================");
+            System.out.print("Seleccione una opción: ");
+            System.out.println("==================================================");
             opcion = sc.nextInt();
-
 
             limpiarPantalla();
 
             switch (opcion) {
                 case 1:
-                    System.out.println("\nSu saldo acutal es: $" + cuenta.getSaldo());
+                    System.out.println("\nSu saldo actual es: $" + cuenta.getSaldo());
                     break;
                 case 2:
                     System.out.print("\nIngrese la cantidad a depositar: $");
@@ -72,12 +71,12 @@ public class Main {
                     System.out.println("\nGracias por usar el sistema bancario.");
                     break;
                 default:
-                    System.out.println("\nOpcion no validad, intente de nuevo.");
+                    System.out.println("\nOpción no válida, intente de nuevo.");
                     break;
             }
 
             // Solo pide presionar Enter si no ha seleccionado la opción de salir
-            if(opcion != 6) {
+            if (opcion != 6) {
                 System.out.println("\nPresione Enter para continuar...");
                 sc.nextLine(); // Captura el salto de línea
                 sc.nextLine(); // Espera a que el usuario presione Enter
